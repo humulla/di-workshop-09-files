@@ -69,8 +69,11 @@ Run your code and see what the difference is. So some research to answer these
 questions:
 
 - **What does utf-8 mean**
+Unicorn Tranformation Format
 - **Why does adding it change what our code does?**
+its tells node how to read the files
 - Extra: **what other things could we try adding instead of `utf-8`?**
+utf-7, utf-16, utf-32
 
 Now, `readFileSync` should be returning a _string_ containing the contents of
 our file.
@@ -129,10 +132,13 @@ In this exercise, we’re going to be working with JSON. Do some research and
 answer the following questions:
 
 - **What is JSON?**
+Javascript Object Notation 
 - **What’s it used for?**
+JSON is used for serializing and transmitting structure data over a network connection
 - **What does it look like?**
+Data Objects
 - **Where have we seen it before?**
-
+package lock.json
 Take a look at `shopping-basket.json` and familiarise yourself with it's
 contents. This is JSON data for a shopping cart. It is an object with one
 attribute - `basket`. Basket is an _array of objects_. Each object in the array
@@ -144,7 +150,7 @@ part 1.**
 
 The data is still a string - before we can work with it as objects & arrays, we
 need to _parse_ it. Do some research: **what does parsing mean?**
-
+To read 
 Replace your console.log with lines of code like this:
 
 ```js
@@ -153,7 +159,7 @@ console.log(data)
 ```
 
 **What do you think will change?**
-
+the contents will be displayed in a different way
 Run the code. **What changed? Why?**
 
 We can _loop_ over each item in the basket with the following code:
